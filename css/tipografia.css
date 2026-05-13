@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@400&family=Poppins:wght@400;500&display=swap');
+
+
+/* Hero / título principal */
+.font-1-xxl {
+  font: 400 3rem/1.2 "Koh Santepheap", serif; /* 48/57.6 regular */
+}
+
+/* Título médio */
+.font-1-xl {
+  font: 400 2rem/normal "Koh Santepheap", serif; /* 32 regular */
+}
+
+/* Título pequeno / subtítulo */
+.font-1-l {
+  font: 400 1.5rem/normal "Koh Santepheap", serif; /* 24 regular */
+}
+
+/* Texto destaque */
+.font-2-l-m {
+  font: 500 1.25rem/normal "Poppins", sans-serif; /* 20 medium */
+}
+
+/* Texto grande */
+.font-2-l {
+  font: 400 1.5rem/1.6 "Poppins", sans-serif; /* 24/38.4 regular */
+}
+
+/* Texto padrão */
+.font-2-m {
+  font: 400 1.25rem/1.6 "Poppins", sans-serif; /* 20/32 regular */
+}
+
+/* Texto médio */
+.font-2-s {
+  font: 400 1.125rem/1.5 "Poppins", sans-serif; /* 18/27 regular */
+}
