@@ -1,0 +1,18 @@
+:root {
+  --p1: #ff0000;
+
+  --t1: #232323;
+  --t2: #4a4a4a;
+
+  --s1: #f5b301;
+
+  --f1: #ffffff;
+}
+
+.botao {
+     display: inline-block;
+  padding: 12px 32px;
+  background-color: var(--p1);
+  color: var(--f1);
+  border-radius: 50px;
+}

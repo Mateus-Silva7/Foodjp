@@ -1,0 +1,17 @@
+.header-bg {
+    background-color: var(--f1);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-menu {
+display: flex;
+align-items: center;
+gap: 42px;
+}
