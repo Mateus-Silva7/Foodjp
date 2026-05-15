@@ -9,8 +9,28 @@
   --f1: #ffffff;
 }
 
+.cor-t1 {
+  color: var(--t1);
+}
+
+.cor-t2 {
+  color: var(--t2);
+}
+
+.cor-f1 {
+  color: var(--f1);
+}
+
+.cor-p1 {
+  color: var(--p1);
+}
+
+body {
+  background-color: var(--f1);
+}
+
 .botao {
-     display: inline-block;
+  display: inline-block;
   padding: 12px 32px;
   background-color: var(--p1);
   color: var(--f1);
