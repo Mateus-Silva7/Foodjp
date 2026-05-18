@@ -1,35 +1,159 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-menu {
-display: flex;
-align-items: center;
-gap: 42px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.menu-mobile {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+
+.menu-mobile span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: var(--t1);
+  border-radius: 4px;
+  transition: transform 0.3s, opacity 0.3s; 
+}
+
+.botao-menu-mobile {
+  display: none;
+}
+
+/* Animação ao abrir — vira um X */
+.menu-mobile.ativo span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+.menu-mobile.ativo span:nth-child(2) {
+  opacity: 0;
+}
+.menu-mobile.ativo span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -6px);
 }
 
 .introducao {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .introducao-main h1 {
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 }
 
 .introducao-main p {
-    margin-bottom: 48px;
-    max-width: 430px;
+  margin-bottom: 48px;
+  max-width: 430px;
 }
 
 .img-sushi {
-    display: flex;
-    justify-content: end;
-    padding-top: 80px;
+  display: flex;
+  justify-content: end;
+  padding-top: 80px;
 }
 
+.img-sushi img {
+  width: 100%;
+  max-width: 520px;
+  min-width: 280px;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 24px;
+  }
+  .introducao-main h1 {
+    font-size: 2.25rem;
+  }
+  .introducao-main p {
+    font-size: 1.125rem;
+    margin-bottom: 24px;
+  }
+  .img-sushi img {
+    width: 100%;
+    max-width: 320px;
+    min-width: 240px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    position: relative;
+  }
+
+  .menu-mobile {
+    display: flex; 
+  }
+
+  .botao-menu-mobile {
+    display: block;
+    margin-top: 24px;
+    text-align: center;
+  }
+
+  .header-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background-color: var(--f1);
+    padding: 24px 32px;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.14);
+    z-index: 9;
+  }
+
+  .header-nav.ativo {
+    display: block;
+  }
+
+  .header-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .header-botao {
+    display: none;
+  }
+
+
+  .introducao {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding-top: 48px;
+    transition: margin-top 0.3s ease;
+  }
+
+  .introducao-main p {
+    max-width: 100%; 
+  }
+
+  .img-sushi {
+    justify-content: center;
+    padding-top: 32px;
+  }
+
+}
