@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@400&family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400&family=Poppins:wght@400;500&display=swap');
 
 
 /* Hero / título principal */
 .font-1-xxl {
-  font: 400 3rem/1.2 "Koh Santepheap", serif; /* 48/57.6 regular */
+  font: 400 3rem/1.2 "Noto Serif JP", serif; /* 48/57.6 regular */
 }
 
 /* Título médio */
 .font-1-xl {
-  font: 400 2rem/normal "Koh Santepheap", serif; /* 32 regular */
+  font: 400 2rem/normal "Noto Serif JP", serif; /* 32 regular */
 }
 
 /* Título pequeno / subtítulo */
 .font-1-l {
-  font: 400 1.5rem/normal "Koh Santepheap", serif; /* 24 regular */
+  font: 400 1.5rem/normal "Noto Serif JP", serif; /* 24 regular */
 }
 
 /* Texto destaque */
