@@ -2,89 +2,129 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/tipografia.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/introducao.css">
-    <title>Foodjp</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/tipografia.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/introducao.css">
+  <link rel="stylesheet" href="./css/especialidades.css">
+  <title>Sushi Zen</title>
 </head>
 
 <body>
-    <!--header e nav-->
-    <header>
-  <div class="header container">
-    <a href="./"><img src="./img/sushi-zen-logo-1.webp" alt="Logo FoodJP"></a>
+  <!--header e nav-->
+  <header>
+    <div class="header container">
+      <a href="./"><img src="./img/sushi-zen-logo-1.webp" alt="Logo FoodJP"></a>
 
-    <button class="menu-mobile" aria-label="Abrir menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+      <button class="menu-mobile" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-    <nav class="header-nav" aria-label="Navegação Principal">
-      <ul class="header-menu">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobre">Sobre nós</a></li>
-        <li><a href="#populares">Populares</a></li>
-      </ul>
+      <nav class="header-nav" aria-label="Navegação Principal">
+        <ul class="header-menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+        </ul>
 
-       
-   <a href="https://web.whatsapp.com/"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="botao botao-menu-mobile"
-  >
-   Faça seu pedido 
-  </a>
-    </nav>
 
-    <a
-      href="https://web.whatsapp.com/"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="botao header-botao"
-    >
-      Faça seu pedido
-    </a>
-  </div>
-</header>
-    <main>
-        <section class="introducao container">
-            <div class="introducao-main">
-                <h1 class="font-1-xxl cor-t1">Comida oriental</h1>
-                <p class="font-2-l cor-t2">
-                    Pratos japoneses preparados com ingredientes frescos, sabores equilibrados e a qualidade que
-                    você merece.
-                </p>
+        <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer" class="botao botao-menu-mobile">
+          Faça seu pedido
+        </a>
+      </nav>
 
-                <a href="./" class="botao">
-                     Ver o cardápio
-                </a>
-            </div>
+      <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer" class="botao header-botao">
+        Faça seu pedido
+      </a>
+    </div>
+  </header>
 
-            <div class="img-sushi">
-                <img src="./img/sushi.webp" alt="Sushi Japonês">
-            </div>
-        </section>
-    
+  <main>
+    <section class="introducao container">
+      <div class="introducao-main">
+        <h1 class="font-1-xxl cor-t1">Comida oriental</h1>
+        <p class="font-2-l cor-t2">
+          Pratos japoneses preparados com ingredientes frescos, sabores equilibrados e a qualidade que
+          você merece.
+        </p>
+
+        <a href="./" class="botao">
+          Ver o cardápio
+        </a>
+      </div>
+
+      <div class="img-sushi">
+        <img src="./img/sushi.webp" alt="Sushi Japonês">
+      </div>
+    </section>
+
 
     <section id="sobre" class="sobre container">
       <div class="sobre-imagem">
         <img src="./img/prato-de-comida.webp" alt="Segurando um prato">
-        </div>
+      </div>
 
-        <div class="sobre-texto">
+      <div class="sobre-texto">
         <span class="font-1-l cor-p1">Sobre nós</span>
         <h2 class="font-1-xxl cor-t1">A tradição da cúlinaria japonesa</h2>
-        <p class="font-2-m  cor-t2">Inspirados pela tradição japonesa, nossos pratos unem técnica, frescor e uma experiência gastronômica sofisticada.</p>
+        <p class="font-2-m  cor-t2">Inspirados pela tradição japonesa, nossos pratos unem técnica, frescor e uma
+          experiência gastronômica sofisticada.</p>
       </div>
     </section>
     <main>
 
-    <script src="./js/script.js"></script>
+      <section>
+        <div class="especialidades">
+          <h2 class="font-1-xxl cor-t1">Especialidades da Casa</h2>
+
+          <div class="especialidades-grid">
+            <article>
+              <img src="/img/sushi-especial.webp" alt="Prato sushi especial">
+              <h3 class="font-1-l cor-t1">Sushi Especial</h3>
+              <p class="font-2-s cor-t1">Combinação artesanal de salmão fresco, arroz temperado e ingredientes selecionados.</p>
+            </article>
+
+            <article>
+              <img src="/img/sashimi.webp" alt="Prato sashimi de salmon">
+              <h3 class="font-1-l cor-t1">Sashimi</h3>
+              <p class="font-2-s cor-t1">Fatias frescas de salmão servidas com autenticidade japonesa.</p>
+            </article>
+
+            <article>
+              <img src="/img/temaki.webp" alt="Prato de temaki">
+              <h3 class="font-1-l cor-t1">Temaki Especial</h3>
+              <p class="font-2-s cor-t1">Cone crocante recheado com salmão, cream cheese e cebolinha fresca.</p>
+            </article>
+
+            <article>
+              <img src="/img/tataki.webp" alt="Prato de tataki de atum">
+              <h3 class="font-1-l cor-t1">Tataki de Atum</h3>
+              <p class="font-2-s cor-t1">Atum levemente selado com molho especial e toque oriental.</p>
+            </article>
+
+              <article>
+              <img src="/img/uramaki.webp" alt="Prato de uramaki filadélfia">
+              <h3 class="font-1-l cor-t1">Uramaki Filadélfia</h3>
+              <p class="font-2-s cor-t1">Rolinho invertido com salmão, cream cheese e gergelim torrado.</p>
+            </article>
+
+              <article>
+              <img src="/img/lamen.webp" alt="Prato de lámen japonês">
+              <h3 class="font-1-l cor-t1">Lámen Japonês</h3>
+              <p class="font-2-s cor-t1">Caldo encorpado com macarrão artesanal, carne e ingredientes orientais.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+
+
+      <script src="./js/script.js"></script>
 </body>
 
 </html>
