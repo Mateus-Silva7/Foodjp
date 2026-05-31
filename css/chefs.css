@@ -86,7 +86,7 @@
   }
 
   .chefs-grid {
-    gap: 48px; /* ← espaço entre os chefs */
+    gap: 48px;
   }
 
   .chef,
@@ -96,10 +96,11 @@
     gap: 16px;
   }
 
-  .chef-imagem img {
+  .chef-yumi img,
+  .chef-ken img {
     width: 100%;
     max-width: 320px;
-    max-height: 480px;
+    max-height: 400px;
     object-fit: cover;
   }
 
@@ -110,7 +111,7 @@
 
   .chef-texto h3 {
     font-size: 1.5rem;
-    margin-bottom: 12px; 
+    margin-bottom: 12px;
   }
 
   .chef-texto p {
@@ -118,6 +119,7 @@
   }
 }
 
+  
 @media (max-width:400px) {
   .chef-imagem img {
   width: 100%;
