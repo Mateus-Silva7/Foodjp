@@ -5,11 +5,14 @@
 .font-1-xxl {
   font: 400 3rem/1.2 "Noto Serif JP", serif; /* 48/57.6 regular */
 }
-
+.font-1-ll {
+  font: 400 2.7rem/1.2 "Noto Serif JP", serif; /* 40px regular */
+}
 /* Título médio */
 .font-1-xl {
   font: 400 2rem/normal "Noto Serif JP", serif; /* 32 regular */
 }
+
 
 /* Título pequeno / subtítulo */
 .font-1-l {

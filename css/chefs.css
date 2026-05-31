@@ -1,16 +1,30 @@
- .chefs h2 {
-    margin-top: 120px;
+.chefs h2 {
+    padding-top: 120px;
+    padding-bottom: 64px;
     text-align: center;
  }
 
-  .chefs img {
-    margin-top: 120px;
-  }
+
+   .chef-yumi img {
+  max-width: 460px;
+  max-height: 660px;
+  object-fit: cover;
+ }
+
+ .chef-ken img {
+  max-width: 400px;
+  max-height: 600px;
+  object-fit: cover;
+ }
 
   .chefs-grid {
     display: flex;
     flex-direction: column;
-    gap:80px
+    gap:42px
+  }
+
+   .chef-invertido {
+    flex-direction: row-reverse;
   }
 
   .chef {
@@ -19,6 +33,98 @@
     gap: 64px;
   }
 
-  .chef-invertido {
-    flex-direction: row-reverse;
+
+  .chef-texto h3 {
+    margin-bottom: 24px;
   }
+
+  .chef-texto span {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  @media(max-width:800px) {
+    .chef {
+      gap: 32px;
+    }
+    .chefs h2 {
+      font-size: 2rem;
+    }
+
+
+    .chef-yumi img {
+      max-width: 380px;
+      max-height: 580px;
+      object-fit: cover;
+    }
+
+    .chef-ken img {
+      max-width: 320px;
+      max-height: 480px;
+      object-fit: cover;
+    }
+
+    .chef-texto span {
+      font-size: 1.125rem;
+  
+    }
+
+    .chef-texto h3 {
+      font-size: 2rem;
+    }
+
+    .chefs p {
+      font-size: 1.125rem;
+      
+    }
+  }
+
+  @media (max-width: 600px) {
+  .chefs h2 {
+    padding-top: 48px;
+    padding-bottom: 32px;
+  }
+
+  .chefs-grid {
+    gap: 48px; /* ← espaço entre os chefs */
+  }
+
+  .chef,
+  .chef-invertido {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .chef-imagem img {
+    width: 100%;
+    max-width: 320px;
+    max-height: 480px;
+    object-fit: cover;
+  }
+
+  .chef-texto span {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .chef-texto h3 {
+    font-size: 1.5rem;
+    margin-bottom: 12px; 
+  }
+
+  .chef-texto p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:400px) {
+  .chef-imagem img {
+  width: 100%;
+  max-width: 260px;  
+  max-height: 360px; 
+  object-fit: cover;
+}
+}
+ 
+
