@@ -1,0 +1,60 @@
+.comentarios h2 {
+ padding-top: 120px;
+ padding-bottom: 64px;
+ text-align: center;
+}
+
+.comentarios-grid {
+    columns: 3;
+    gap: 24px;
+}
+
+.comentario {
+    break-inside: avoid;
+    background-color: #f9f8f6;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.estrelas {
+    display: block;
+    color: var(--p1);
+    opacity: .85;
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+}
+
+.comentario p {
+    margin-bottom: 16px;
+}
+
+.comentario strong {
+  display: block;
+}
+
+@media(max-width:800px) {
+    .comentarios h2 {
+        font-size: 2rem;
+        padding-top: 80px;
+        padding-bottom: 48px;
+    }
+
+    .comentarios-grid {
+        columns: 2;
+    }
+}
+
+@media(max-width:600px) {
+    .comentarios h2 {
+        padding-top: 48px;
+        padding-bottom: 32px;
+    }
+
+    .comentarios-grid {
+        columns: 1;
+    }
+} 
+
+
+
