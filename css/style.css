@@ -1,5 +1,5 @@
 :root {
-  --p1: #A31E21;
+  --p1: #a31e21;
 
   --t1: #232323;
   --t2: #4a4a4a;
@@ -35,7 +35,9 @@ body {
   background-color: var(--p1);
   color: var(--f1);
   border-radius: 50px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
 }
 
 .botao:hover {
