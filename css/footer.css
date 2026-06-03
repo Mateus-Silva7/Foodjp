@@ -84,6 +84,12 @@
   color: var(--p1);
 }
 
+
+.animate.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 800px) {
   .footer-container {
     grid-template-columns: 1fr 1fr;

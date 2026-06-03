@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="./css/comentarios.css">
   <link rel="stylesheet" href="./css/localizacao.css">
   <link rel="stylesheet" href="./css/footer.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
   <title>Sushi Zen</title>
 </head>
 
@@ -50,7 +53,7 @@
   </header>
 
   <main>
-    <section id="inicio" class="introducao container">
+    <section id="inicio" class="introducao container" data-aos="fade-up">
       <div class="introducao-main">
         <h1 class="font-1-xxl cor-t1">Sabores do Japão</h1>
         <p class="font-2-l cor-t2">
@@ -70,233 +73,254 @@
 
 
     <section class="sobre container">
-      <div class="sobre-imagem">
+      <div class="sobre-imagem" data-aos="fade-right">
         <img src="./img/prato-de-comida.webp" alt="Segurando um prato">
       </div>
 
-      <div class="sobre-texto">
+      <div class="sobre-texto" data-aos="fade-left">
         <span class="font-1-l cor-p1">Nossa Essência</span>
-        <h2 class="font-1-xxl cor-t1">A tradição da cúlinaria japonesa</h2>
+        <h2 class="font-1-xxl cor-t1">A tradição da culinária japonesa</h2>
         <p class="font-2-m  cor-t2">Inspirados pela tradição japonesa, nossos pratos unem técnica, frescor e uma
           experiência gastronômica sofisticada.</p>
       </div>
     </section>
-    <main>
+  </main>
 
-      <section id="especialidades">
-        <div class="especialidades container">
-          <h2 class="font-1-xxl cor-t1">Especialidades da casa</h2>
+  <section id="especialidades">
+    <div class="especialidades container">
+      <h2 class="font-1-xxl cor-t1" data-aos="fade-up">Especialidades da casa</h2>
 
-          <div class="slide-controles">
-            <button class="slide-btn slide-prev" aria-label="Anterior">&#8592;</button>
-            <button class="slide-btn slide-next" aria-label="Próximo">&#8594;</button>
-          </div>
+      <div class="slide-controles">
+        <button class="slide-btn slide-prev" aria-label="Anterior">&#8592;</button>
+        <button class="slide-btn slide-next" aria-label="Próximo">&#8594;</button>
+      </div>
 
-          <div class="especialidades-grid">
-            <article>
-              <img src="/img/sushi-especial.webp" alt="Prato sushi especial">
-              <h3 class="font-1-l cor-t1">Sushi Especial</h3>
-              <p class="font-2-s cor-t1">Salmão fresco, arroz temperado e ingredientes selecionados.</p>
-              <span class="preco cor-p1 font-1-l">R$ 42,90</span>
-            </article>
+      <div class="especialidades-grid">
+        <article data-aos="zoom-in" data-aos-delay="100">
+          <img src="./img/sushi-especial.webp" alt="Prato sushi especial">
+          <h3 class="font-1-l cor-t1">Sushi Especial</h3>
+          <p class="font-2-s cor-t1">Salmão fresco, arroz temperado e ingredientes selecionados.</p>
+          <span class="preco cor-p1 font-1-l">R$ 42,90</span>
+        </article>
 
-            <article>
-              <img src="/img/sashimi.webp" alt="Prato sashimi de salmon">
-              <h3 class="font-1-l cor-t1">Sashimi</h3>
-              <p class="font-2-s cor-t1">Fatias frescas de salmão servidas com autenticidade japonesa.</p>
-              <span class="preco cor-p1 font-1-l">R$ 38,90</span>
-            </article>
+        <article data-aos="zoom-in" data-aos-delay="200">
+          <img src="./img/sashimi.webp" alt="Prato sashimi de salmon">
+          <h3 class="font-1-l cor-t1">Sashimi</h3>
+          <p class="font-2-s cor-t1">Fatias frescas de salmão servidas com autenticidade japonesa.</p>
+          <span class="preco cor-p1 font-1-l">R$ 38,90</span>
+        </article>
 
-            <article>
-              <img src="/img/temaki.webp" alt="Prato de temaki">
-              <h3 class="font-1-l cor-t1">Temaki Especial</h3>
-              <p class="font-2-s cor-t1">Temaki crocante com salmão, cream cheese e cebolinha fresca.</p>
-              <span class="preco cor-p1 font-1-l">R$ 29,90</span>
-            </article>
+        <article data-aos="zoom-in" data-aos-delay="300">
+          <img src="./img/temaki.webp" alt="Prato de temaki">
+          <h3 class="font-1-l cor-t1">Temaki Especial</h3>
+          <p class="font-2-s cor-t1">Temaki crocante com salmão, cream cheese e cebolinha fresca.</p>
+          <span class="preco cor-p1 font-1-l">R$ 29,90</span>
+        </article>
 
-            <article>
-              <img src="/img/tataki.webp" alt="Prato de tataki de atum">
-              <h3 class="font-1-l cor-t1">Tataki de Atum</h3>
-              <p class="font-2-s cor-t1">Atum levemente selado com molho especial e toque oriental.</p>
-              <span class="preco cor-p1 font-1-l">R$ 46,90</span>
-            </article>
+        <article data-aos="zoom-in" data-aos-delay="100">
+          <img src="./img/tataki.webp" alt="Prato de tataki de atum">
+          <h3 class="font-1-l cor-t1">Tataki de Atum</h3>
+          <p class="font-2-s cor-t1">Atum levemente selado com molho especial e toque oriental.</p>
+          <span class="preco cor-p1 font-1-l">R$ 46,90</span>
+        </article>
 
-            <article>
-              <img src="/img/uramaki.webp" alt="Prato de uramaki filadélfia">
-              <h3 class="font-1-l cor-t1">Uramaki Filadélfia</h3>
-              <p class="font-2-s cor-t1">Rolinho invertido com salmão, cream cheese e gergelim torrado.</p>
-              <span class="preco cor-p1 font-1-l">R$ 34,90</span>
-            </article>
+        <article data-aos="zoom-in" data-aos-delay="200">
+          <img src="./img/uramaki.webp" alt="Prato de uramaki filadélfia">
+          <h3 class="font-1-l cor-t1">Uramaki Filadélfia</h3>
+          <p class="font-2-s cor-t1">Rolinho invertido com salmão, cream cheese e gergelim torrado.</p>
+          <span class="preco cor-p1 font-1-l">R$ 34,90</span>
+        </article>
 
-            <article>
-              <img src="/img/lamen.webp" alt="Prato de lámen japonês">
-              <h3 class="font-1-l cor-t1">Lámen Japonês</h3>
-              <p class="font-2-s cor-t1">Lámen artesanal com caldo encorpado e sabores orientais.</p>
-              <span class="preco cor-p1 font-1-l">R$ 39,90</span>
-            </article>
-          </div>
+        <article data-aos="zoom-in" data-aos-delay="300">
+          <img src="./img/lamen.webp" alt="Prato de lámen japonês">
+          <h3 class="font-1-l cor-t1">Lámen Japonês</h3>
+          <p class="font-2-s cor-t1">Lámen artesanal com caldo encorpado e sabores orientais.</p>
+          <span class="preco cor-p1 font-1-l">R$ 39,90</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="chefs" class="chefs container">
+    <h2 class="font-1-xxl cor-t1">Conheça nossos chefs</h2>
+
+    <div class="chefs-grid">
+      <article class="chef chef-yumi" data-aos="fade-right">
+        <div class="chef-imagem">
+          <img src="./img/chef-mulher.webp" alt="Chef Yumi Kobayashi">
         </div>
-      </section>
-
-      <section id="chefs" class="chefs container">
-        <h2 class="font-1-xxl cor-t1">Conheça nossos chefs</h2>
-
-        <div class="chefs-grid">
-          <article class="chef chef-yumi">
-            <div class="chef-imagem">
-              <img src="./img/chef-mulher.webp" alt="Chef Yumi Kobayashi">
-            </div>
-            <div class="chef-texto">
-              <span class="cor-p1 font-1-l">Head Chef</span>
-              <h3 class="font-1-ll cor-t1">Yumi Kobayashi</h3>
-              <p class="font-2-l cor-t2">Com anos de experiência na culinária japonesa, Yumi domina técnicas
-                tradicionais e contemporâneas.</p>
-            </div>
-          </article>
-
-          <article class="chef chef-invertido chef-ken">
-            <div class="chef-imagem">
-              <img src="./img/chef-homem.webp" alt="Chef Ken Tanaka">
-            </div>
-            <div class="chef-texto">
-              <span class="cor-p1 font-1-l">Mestre Sushiman</span>
-              <h3 class="font-1-ll cor-t1">Ken Tanaka</h3>
-              <p class="font-2-l cor-t2">Especialista em sushi tradicional com mais de 15 anos de experiência, Ken
-                Tanaka une técnica, precisão e autenticidade em cada criação.</p>
-            </div>
-          </article>
+        <div class="chef-texto">
+          <span class="cor-p1 font-1-l">Head Chef</span>
+          <h3 class="font-1-ll cor-t1">Yumi Kobayashi</h3>
+          <p class="font-2-l cor-t2">Com anos de experiência na culinária japonesa, Yumi domina técnicas
+            tradicionais e contemporâneas.</p>
         </div>
-      </section>
+      </article>
 
-      <section class="comentarios container">
-        <h2 class="font-1-xxl cor-t1">Experiências que marcam</h2>
-
-        <div class="comentarios-grid">
-          <article class="comentario">
-            <span class="estrelas">★★★★★</span>
-            <p class="font-2-s cor-t1">Uma experiência memorável. Os pratos chegaram impecáveis, com ingredientes
-              frescos e apresentação sofisticada. Certamente voltaremos.</p>
-            <strong class="font-2-l-m cor-t1">— Washington Silva</strong>
-          </article>
-
-          <article class="comentario">
-            <span class="estrelas">★★★★★</span>
-            <p class="font-2-s cor-t1">Atendimento excepcional e um ambiente elegante. O melhor sushi que já
-              experimentei.</p>
-            <strong class="font-2-l-m cor-t1">— Leticia Souza</strong>
-          </article>
-
-          <article class="comentario">
-            <span class="estrelas">★★★★★</span>
-            <p class="font-2-s cor-t1">Cada prato demonstra cuidado nos detalhes. Uma experiência autêntica da culinária
-              japonesa.</p>
-            <strong class="font-2-l-m cor-t1">— Lucas Silva</strong>
-          </article>
-
-          <article class="comentario">
-            <span class="estrelas">★★★★★</span>
-            <p class="font-2-s cor-t1">Uma experiência incrível do começo ao fim. Pratos muito saborosos, ingredientes
-              de qualidade e um atendimento que faz toda a diferença.</p>
-            <strong class="font-2-l-m cor-t1">— Maria Janete</strong>
-          </article>
+      <article class="chef chef-invertido chef-ken" data-aos="fade-left">
+        <div class="chef-imagem">
+          <img src="./img/chef-homem.webp" alt="Chef Ken Tanaka">
         </div>
-      </section>
-
-      <section class="localizacao">
-        <div class="localizacao-grid container">
-
-          <div class="localizacao-mapa">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975836198906!2d-46.6543978!3d-23.5646162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzUyLjYiUyA0NsKwMzknMTUuOCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
-              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
-
-          <div class="localizacao-info">
-            <h2 class="font-1-xl cor-t1">Visite o Sushi Zen</h2>
-
-            <div class="localizacao-item">
-              <i class="ph ph-map-pin cor-p1"></i>
-              <p class="font-2-s cor-t2">Rua Paulista, 1234 — Bela Vista, São Paulo</p>
-            </div>
-
-            <div class="localizacao-item">
-              <i class="ph ph-clock cor-p1"></i>
-              <p class="font-2-s cor-t2">Seg a Sex: 11h às 23h — Sáb e Dom: 11h às 00h</p>
-            </div>
-
-            <div class="localizacao-item">
-              <i class="ph ph-phone cor-p1"></i>
-              <p class="font-2-s cor-t2">(11) 99999-9999</p>
-            </div>
-
-            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="botao">
-              Fazer reserva
-            </a>
-          </div>
+        <div class="chef-texto">
+          <span class="cor-p1 font-1-l">Mestre Sushiman</span>
+          <h3 class="font-1-ll cor-t1">Ken Tanaka</h3>
+          <p class="font-2-l cor-t2">Especialista em sushi tradicional com mais de 15 anos de experiência, Ken
+            Tanaka une técnica, precisão e autenticidade em cada criação.</p>
         </div>
-      </section>
+      </article>
+    </div>
+  </section>
 
-      <footer class="footer">
-        <div class="footer-container container">
+  <section class="comentarios container">
+    <h2 class="font-1-xxl cor-t1">Experiências que marcam</h2>
 
-          <div class="footer-brand">
-            <h2 class="font-1-l">Sushi Zen</h2>
-            <p class="font-2-s">Onde o Japão encontra sua mesa.</p>
-          </div>
+    <div class="comentarios-grid">
+      <article class="comentario" data-aos="fade-up" data-aos-delay="100">
+        <span class="estrelas">★★★★★</span>
+        <p class="font-2-s cor-t1">Uma experiência memorável. Os pratos chegaram impecáveis, com ingredientes
+          frescos e apresentação sofisticada. Certamente voltaremos.</p>
+        <strong class="font-2-l-m cor-t1">— Washington Silva</strong>
+      </article>
 
-          <div class="footer-nav">
-            <h3 class="font-1-l">Navegação</h3>
-            <ul>
-              <li><a href="#inicio" class="font-2-s">Início</a></li>
-              <li><a href="#especialidades" class="font-2-s">Especialidades</a></li>
-              <li><a href="#chefs" class="font-2-s">Chefs</a></li>
-              <li><a href="#cardapio" class="font-2-s">Cardápio</a></li>
-            </ul>
-          </div>
+      <article class="comentario" data-aos="fade-up" data-aos-delay="200">
+        <span class="estrelas">★★★★★</span>
+        <p class="font-2-s cor-t1">Atendimento excepcional e um ambiente elegante. O melhor sushi que já
+          experimentei.</p>
+        <strong class="font-2-l-m cor-t1">— Leticia Souza</strong>
+      </article>
 
-          <div class="footer-contato">
-            <h3 class="font-1-l">Contato</h3>
-            <ul>
-              <li>
-                <i class="ph ph-map-pin"></i>
-                <span class="font-2-s">Rua Paulista, 1234 — SP</span>
-              </li>
-              <li>
-                <i class="ph ph-phone"></i>
-                <span class="font-2-s">(11) 99999-9999</span>
-              </li>
-              <li>
-                <i class="ph ph-envelope"></i>
-                <span class="font-2-s">contato@sushizen.com</span>
-              </li>
-            </ul>
-          </div>
+      <article class="comentario" data-aos="fade-up" data-aos-delay="300">
+        <span class="estrelas">★★★★★</span>
+        <p class="font-2-s cor-t1">Cada prato demonstra cuidado nos detalhes. Uma experiência autêntica da culinária
+          japonesa.</p>
+        <strong class="font-2-l-m cor-t1">— Lucas Silva</strong>
+      </article>
 
+      <article class="comentario" data-aos="fade-up" data-aos-delay="400">
+        <span class="estrelas">★★★★★</span>
+        <p class="font-2-s cor-t1">Uma experiência incrível do começo ao fim. Pratos muito saborosos, ingredientes
+          de qualidade e um atendimento que faz toda a diferença.</p>
+        <strong class="font-2-l-m cor-t1">— Maria Janete</strong>
+      </article>
+    </div>
+  </section>
+
+  <section class="localizacao">
+    <div class="localizacao-grid container">
+
+      <div class="localizacao-mapa" data-aos="fade-right">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975836198906!2d-46.6543978!3d-23.5646162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzUyLjYiUyA0NsKwMzknMTUuOCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <div class="localizacao-info" data-aos="fade-left">
+        <h2 class="font-1-xl cor-t1">Visite o Sushi Zen</h2>
+
+        <div class="localizacao-item">
+          <i class="ph ph-map-pin cor-p1"></i>
+          <p class="font-2-s cor-t2">Rua Paulista, 1234 — Bela Vista, São Paulo</p>
         </div>
 
-        <div class="footer-bottom container">
-          <p class="font-2-s">© 2025 Sushi Zen. Todos os direitos reservados.</p>
-          <div class="footer-redes">
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <i class="ph ph-instagram-logo"></i>
-            </a>
-
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <i class="ph ph-facebook-logo"></i>
-            </a>
-
-            <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-              <i class="ph ph-tiktok-logo"></i>
-            </a>
-          </div>
+        <div class="localizacao-item">
+          <i class="ph ph-clock cor-p1"></i>
+          <p class="font-2-s cor-t2">Seg a Sex: 11h às 23h — Sáb e Dom: 11h às 00h</p>
         </div>
 
-      </footer>
+        <div class="localizacao-item">
+          <i class="ph ph-phone cor-p1"></i>
+          <p class="font-2-s cor-t2">(11) 99999-9999</p>
+        </div>
 
-      <script src="./js/script.js"></script>
-      <script src="./js/slide-mobile.js"></script>
+        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="botao">
+          Fazer reserva
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container container" data-aos="fade-up">
+
+      <div class="footer-brand">
+        <h2 class="font-1-l">Sushi Zen</h2>
+        <p class="font-2-s">Onde o Japão encontra sua mesa.</p>
+      </div>
+
+      <div class="footer-nav">
+        <h3 class="font-1-l">Navegação</h3>
+        <ul>
+          <li><a href="#inicio" class="font-2-s">Início</a></li>
+          <li><a href="#especialidades" class="font-2-s">Especialidades</a></li>
+          <li><a href="#chefs" class="font-2-s">Chefs</a></li>
+          <li><a href="#cardapio" class="font-2-s">Cardápio</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contato">
+        <h3 class="font-1-l">Contato</h3>
+        <ul>
+          <li>
+            <i class="ph ph-map-pin"></i>
+            <span class="font-2-s">Rua Paulista, 1234 — SP</span>
+          </li>
+          <li>
+            <i class="ph ph-phone"></i>
+            <span class="font-2-s">(11) 99999-9999</span>
+          </li>
+          <li>
+            <i class="ph ph-envelope"></i>
+            <span class="font-2-s">contato@sushizen.com</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom container">
+      <p class="font-2-s">© 2025 Sushi Zen. Todos os direitos reservados.</p>
+      <div class="footer-redes">
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="ph ph-instagram-logo"></i>
+        </a>
+
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <i class="ph ph-facebook-logo"></i>
+        </a>
+
+        <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <i class="ph ph-tiktok-logo"></i>
+        </a>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="./js/script.js"></script>
+  <script src="./js/slide-mobile.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="./js/aos.js"></script>
+
+
+  <script>
+    if (window.innerWidth <= 600) {
+      const cards = document.querySelectorAll('#especialidades article')
+
+      cards.forEach(card => {
+        card.removeAttribute('data-aos');
+        card.removeAttribute('data-aos-delay');
+      });
+    }
+    AOS.init({
+      duration: 900,
+      once: true,
+      easing: 'ease-out-cubic',
+
+    });
+  </script>
+
 </body>
 
 </html>
